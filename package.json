@@ -1,0 +1,24 @@
+{
+  "name": "odict",
+  "version": "1.0.0",
+  "description": "Bunch of helper functions for working with objects as dictionaries.",
+  "main": "odict.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isum/odict.git"
+  },
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "es6"
+  ],
+  "author": "Igor Sukharev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isum/odict/issues"
+  },
+  "homepage": "https://github.com/isum/odict#readme"
+}
