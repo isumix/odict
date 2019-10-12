@@ -1,11 +1,11 @@
 
-= odict - object dictionary
+# odict - object dictionary
 
 Bunch of helper functions for working with objects as dictionaries.
 
 *These methods work on all enumerable properties, including inherited.*
 
-== Import
+## Import
 
 Import all functions into `odict` namespace:
 
@@ -19,7 +19,7 @@ Or import only needed functions:
 import {isDict, isEmpty, reduce, map, iterable} from "odict";
 ```
 
-== Usage
+## Usage
 
 For example object like this:
 
@@ -31,7 +31,7 @@ const people = {
 };
 ```
 
-=== isDict
+### isDict
 
 Check if value is dictionary:
 
@@ -40,7 +40,7 @@ isDict(people); // true
 isDict([1, 2]); // false
 ```
 
-=== isEmpty
+### isEmpty
 
 Check dictionary for emptiness:
 
@@ -49,7 +49,7 @@ isEmpty(people); // false
 isEmpty({    }); // true
 ```
 
-=== reduce
+### reduce
 
 Reduce dictionary, which works very much like [Array.prototype.reduce()][1]:
 
@@ -58,7 +58,7 @@ const reducer = (acc, value, key) => (acc.push(`${key} - ${value}`), acc);
 reduce(people, reducer, []); // ["a - Igor", "b - Mike", "c - Luke"]
 ```
 
-=== map
+### map
 
 Map dictionary, which works very much like [Array.prototype.map()][2]:
 
@@ -67,7 +67,7 @@ const mapper = (value, key) => `${key} - ${value}`;
 map(people, mapper); // ["a - Igor", "b - Mike", "c - Luke"]
 ```
 
-=== iterable
+### iterable
 
 Create generator:
 
