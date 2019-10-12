@@ -5,6 +5,12 @@ Bunch of helper functions for working with objects as dictionaries.
 
 *These methods work on all enumerable properties, including inherited.*
 
+## Install
+
+```
+npm i --save odict
+```
+
 ## Import
 
 Import all functions into `odict` namespace:
@@ -33,7 +39,7 @@ const people = {
 
 ### isDict
 
-Check if value is dictionary:
+Check if value is a dictionary:
 
 ``` lang-js
 isDict(people); // true
@@ -69,7 +75,7 @@ map(people, mapper); // ["a - Igor", "b - Mike", "c - Luke"]
 
 ### iterable
 
-Create generator:
+Create generator object:
 
 ``` lang-js
 for (const [key, value] of iterable(people)) console.log(`${key} - ${value}`);
