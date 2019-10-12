@@ -1,5 +1,5 @@
 
-# odict - object dictionary
+# odict - Object Dictionary
 
 Bunch of helper functions for working with objects as dictionaries.
 
